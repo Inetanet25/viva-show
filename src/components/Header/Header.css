@@ -1,0 +1,14 @@
+.header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.9) url('https://viva-show.ru/wp-content/themes/photology/assets/img/man-camera-photography-photographer-lens-reflex-camera-60417-pxhere.com.jpg') no-repeat center center;
+}
+.header-logo-navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+}

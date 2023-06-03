@@ -1,0 +1,47 @@
+.biography {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: center;
+    /*height: 700px;*/
+    justify-content: flex-start;
+
+}
+.bio-photo {
+    width: 22vw;
+}
+@media (max-width: 1280px) {
+    .bio-photo {
+        width: 27vw;
+    }
+}
+.bio-name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80px;
+    align-items: center;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.bio-text-wrapper {
+    width: 22vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.bio-text{
+    height: 170px;
+}
+.bio-profession {
+    width: 18vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.head-of-bio {
+    display: flex;
+    flex-direction: column;
+    height: 622px;
+    align-items: center;
+}

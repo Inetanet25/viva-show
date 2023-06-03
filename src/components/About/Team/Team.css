@@ -1,0 +1,30 @@
+.team-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #fbfbfb;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+    height: 300px;
+}
+.team{
+
+}
+.our-team {
+    display: flex;
+    width: 80vw;
+
+}
+.our-team-text-wrapper{
+    width: 600px;
+}
+.our-team-text{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.our-team-text h1{
+    font-size: 2em;
+}

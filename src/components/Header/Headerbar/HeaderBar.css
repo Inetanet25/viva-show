@@ -1,0 +1,22 @@
+.active {
+    color: gold;
+}
+.disable {
+    color: #F0f8ff;
+}
+.header-bar a{
+    text-decoration: none;
+}
+.header-bar a:hover{
+    transition-delay: 0.3s;
+    transition: 0.3s;
+    color: gold;
+}
+.header-bar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60vw;
+    align-items: center;
+}
+
+

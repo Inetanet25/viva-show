@@ -50,4 +50,5 @@ table {
 .App {
     font-family: "Roboto Light";
     overflow-x: hidden;
+    overflow-y: hidden;
 }

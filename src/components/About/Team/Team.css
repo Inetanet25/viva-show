@@ -16,10 +16,10 @@
 
 }
 .our-team-text-wrapper{
-    width: 600px;
+    width: 40vw;
 }
 .our-team-text{
-    width: 500px;
+    width: 35vw;
     height: 100px;
     display: flex;
     justify-content: space-between;

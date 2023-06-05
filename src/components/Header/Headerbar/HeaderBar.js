@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 const HeaderBar = () => {
     return (<div className='header-bar'>
 
-        <NavLink to='/main' className={(e) => e.isActive ? 'active' : 'disable'}>Главная
+        <NavLink to='/' className={(e) => e.isActive ? 'active' : 'disable'}>Главная
             страница</NavLink>
         <NavLink to='/contacts' className={(e) => e.isActive ? 'active' : 'disable'}>Контакты</NavLink>
 

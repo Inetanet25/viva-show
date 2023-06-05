@@ -45,6 +45,37 @@
     width: 24vw;
     height: 184px;
 }
-
+@media (min-width: 1501px)  {
+    .content-wrapper {
+        height: 900px;
+    }
+}
+@media (min-width: 961px) and (max-width: 1500px) {
+    .content-wrapper {
+        height: 1000px;
+    }
+}
+@media (max-width: 960px) {
+    .example {
+        width: 80vw;
+    }
+    .example h2{
+        font-size: 2em;
+    }
+    .example img {
+        width: 65%;
+    }
+    .example div p {
+        width: 80vw;
+        height: 150px;
+    }
+    .examples {
+        flex-wrap: wrap;
+        height: 2500px;
+    }
+    .services-text {
+        font-size: 2.5em;
+    }
+}
 
 

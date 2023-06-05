@@ -1,4 +1,5 @@
 import './Content.css';
+import ServiceCalc from "./Service/ServiceCalc";
 
 
 const Content = () => {
@@ -41,6 +42,7 @@ const Content = () => {
                         сотрудников, формируют общую цель и усиливают ее значимость.</p></div>
                 </div>
             </div>
+            {/*<ServiceCalc/>*/}
         </div>
     )
 }

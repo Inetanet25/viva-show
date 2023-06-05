@@ -10,11 +10,7 @@
 .bio-photo {
     width: 22vw;
 }
-@media (max-width: 1280px) {
-    .bio-photo {
-        width: 27vw;
-    }
-}
+
 .bio-name {
     display: flex;
     justify-content: center;

@@ -1,0 +1,51 @@
+.service-calc-wrapper {
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service-calc-wrapper h1{
+    font-size: 2em;
+    width: 80vw;
+}
+.text-over-calc{
+    height: 70px;
+}
+.calc {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+
+}
+.service {
+    width: 30vw;
+}
+.add-service {
+    width: 30vw;
+}
+.service ul {
+    list-style: none;
+}
+.service ul li button {
+    /*padding: 0;*/
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    /* переопределение стилей для ссылок */
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3em;
+
+    /* невидимая рамка */
+    /*border: solid 1px transparent;*/
+    /*border-radius: 4px;*/
+    width: 20vw;
+    height: 45px;
+
+    /* контрастные цвета */
+    color: #ffffff;
+    background-color: grey;
+}

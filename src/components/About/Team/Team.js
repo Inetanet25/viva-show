@@ -14,22 +14,17 @@ const Team = () => {
                     </div>
                 </div>
                 <div className='card'>
-                    <div className='card-container-wrapper'>
-                        <div className='card-container'>
-                            <div className='image-name-container'>
-                                <div className='image'>
-                                    <img alt='nema'
-                                         src='https://viva-show.ru/wp-content/uploads/2023/04/photo1681459185-1.jpeg'/>
-                                </div>
-                                <div className='name'>
-                                    <h2>Андрей Осипов</h2>
-                                    <p>Основатель проекта</p>
-                                </div>
+                    <div className='card-container'>
+                        <div className='image-name-container'>
+                            <img alt='nema'
+                                 src='https://viva-show.ru/wp-content/uploads/2023/04/photo1681459185-1.jpeg'/>
+                            <div className='name'>
+                                <h2>Андрей Осипов</h2>
+                                Основатель проекта
                             </div>
                         </div>
                         <div className='card-container-text'>
-                            Мы предлагаем каждому прикоснуться к волшебному миру кино и почувствовать себя настоящей
-                            звездой!
+                            Мы предлагаем каждому прикоснуться к волшебному миру кино и почувствовать себя настоящей звездой!
                         </div>
                     </div>
                 </div>

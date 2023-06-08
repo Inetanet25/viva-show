@@ -5,6 +5,9 @@
     flex-direction: column;
     align-items: center;
 }
+.about-team{
+    background-color: #fbfbfb;
+}
 .about-container {
     width: 100vw;
     display: flex;
@@ -51,7 +54,7 @@
 }
 .card {
     display: flex;
-    height: 200px;
+    height: 250px;
     align-items: center;
     justify-content: center;
     background-color: #f2f2f6;
@@ -87,7 +90,10 @@
         width: 80vw;
     }
     .about-container{
-        height: 1100px;
+        height: 1800px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
     }
     .picture-and-text-container{
         height: 1200px;
@@ -95,6 +101,9 @@
     .text-right-of-picture {
         width: 80vw;
         height: 900px;
+    }
+    .text {
+        font-size: 1.3em;
     }
     .card {
         width: 80vw;
@@ -106,17 +115,33 @@
     .image-name-container img {
         width: 200px;
     }
+    .image-name-container {
+        width: 450px;
+    }
+    .card-container-text {
+        width: 65vw;
+        font-size: 1.1em;
+    }
+    .name h2{
+        font-size: 1.7em;
+    }
+    .name {
+        font-size: 1.2em;
+    }
+    .text-right-of-picture h1{
+        font-size: 2.2em;
+    }
 
 }
 @media (min-width: 961px) and (max-width: 1500px) {
     .text-right-of-picture {
-        height: 600px;
+        height: 650px;
     }
     .picture-and-text-container {
         height: 900px;
     }
     .picture img {
-        width: 400px;
+        width: 450px;
     }
     .upper-text h1 {
         font-size: 2em;

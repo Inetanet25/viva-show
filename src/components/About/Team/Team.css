@@ -28,3 +28,29 @@
 .our-team-text h1{
     font-size: 2em;
 }
+@media (max-width: 960px) {
+    .our-team {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 600px;
+    }
+    .team{
+        height: 650px;
+    }
+    .our-team-text{
+        font-size: 1.1em;
+        width: 80vw;
+    }
+    .our-team-text h1{
+        font-size: 1.7em;
+    }
+    .our-team-text-wrapper{
+        width: 80vw;
+    }
+    .team-wrapper{
+        height: 700px;
+    }
+}

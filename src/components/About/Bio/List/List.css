@@ -3,7 +3,6 @@
     flex-direction: column;
     width: 33%;
     align-items: center;
-    /*height: 700px;*/
     justify-content: flex-start;
 
 }
@@ -22,22 +21,54 @@
 }
 .bio-text-wrapper {
     width: 22vw;
-    height: 200px;
     display: flex;
     justify-content: center;
 }
-.bio-text{
-    height: 170px;
-}
+
 .bio-profession {
     width: 18vw;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: center;
 }
 .head-of-bio {
     display: flex;
     flex-direction: column;
-    height: 622px;
     align-items: center;
+}
+@media  (max-width: 960px) {
+    .biography{
+        width: 80%;
+    }
+    .bio-photo{
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .head-of-bio{
+        width: 80vw;
+        display: flex;
+        align-items: center;
+    }
+    .bio-photo img{
+        width: 500px;
+    }
+    .bio-name {
+        width: 70vw;
+        height: 140px;
+        font-size: 2em;
+    }
+    .bio-profession{
+        width: 70vw;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .bio-text {
+        width: 70vw;
+    }
+    .bio-text-wrapper{
+        width: 70vw;
+        font-size: 1.2em;
+    }
 }

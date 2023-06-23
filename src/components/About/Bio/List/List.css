@@ -4,6 +4,7 @@
     width: 33%;
     align-items: center;
     justify-content: flex-start;
+    margin-bottom: 10px;
 
 }
 .bio-photo {
@@ -39,6 +40,7 @@
 @media  (max-device-width: 960px) or (max-width: 960px) {
     .biography{
         width: 80%;
+        margin-bottom: 25px;
     }
     .bio-photo{
         width: 80vw;
@@ -56,13 +58,13 @@
     }
     .bio-name {
         width: 70vw;
-        height: 140px;
         font-size: 2em;
     }
     .bio-profession{
         width: 70vw;
         font-size: 1.5em;
         text-align: center;
+        margin-bottom: 20px;
     }
     .bio-text {
         width: 70vw;

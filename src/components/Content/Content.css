@@ -4,7 +4,12 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 130px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.services-wrapper p {
+    font-size: 1.3em;
+    padding-top: 20px;
 }
 .services {
     height: 100px;
@@ -19,50 +24,38 @@
 .services-text{
     font-weight: bold;
     font-size: 2em;
-    height: 80px;
 }
 .example img {
     width: 24vw;
     border-radius: 100%;
 }
-
+.example h2{
+    padding-bottom: 15px;
+    font-size: 1.5em;
+}
 .examples {
     display: flex;
     flex-direction: row;
     width: 90vw;
     justify-content: space-evenly;
-    /*height: 662px;*/
 }
 
 .example {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     width: 30%;
+    margin-bottom: 40px;
 }
 .example div p {
     width: 24vw;
-    height: 184px;
+    padding-top: 40px;
+    font-size: 1.3em;
 }
-/*@media (min-width: 1501px) or (min-device-width: 1501px)  {*/
-/*    .content-wrapper {*/
-/*        height: 900px;*/
-/*    }*/
-/*}*/
-/*@media (min-width: 961px) and (max-width: 1500px) {*/
-/*    .content-wrapper {*/
-/*        height: 1000px;*/
-/*    }*/
-/*}*/
-/*@media (min-device-width: 961px) and (max-device-width: 1500px) {*/
-/*    .content-wrapper {*/
-/*        height: 1000px;*/
-/*    }*/
-/*}*/
 @media (max-width: 960px) or (max-device-width: 960px){
     .example {
         width: 80vw;
+        margin-bottom: 80px;
     }
     .example h2{
         font-size: 2em;
@@ -72,11 +65,11 @@
     }
     .example div p {
         width: 80vw;
-        height: 150px;
+        font-size: 1.3em;
+        padding-top: 20px;
     }
     .examples {
         flex-wrap: wrap;
-        /*height: 2500px;*/
     }
     .services-text {
         font-size: 2.5em;

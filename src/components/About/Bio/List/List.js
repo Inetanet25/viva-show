@@ -17,8 +17,6 @@ const List = ({name = 'Alice', text = 'Hello', profession = 'Stroitel', photo}) 
         <div className='bio-text-wrapper'>
             <div className='bio-text'>
                 {text}
-                <br/>
-                <br/>
             </div>
         </div>
     </div>)

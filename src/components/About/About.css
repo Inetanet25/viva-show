@@ -8,23 +8,23 @@
 .about-team{
     background-color: #fbfbfb;
 }
+.text p{
+    margin-bottom: 15px;
+}
 .about-container {
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
-    height: 850px;
-}
+    background-color: #ffffff;}
 
 .picture-and-text {
     width: 80vw;
     display: flex;
-    height: 750px;
-
 }
 .picture-and-text-container {
-    height: 825px;
+    margin-top: 55px;
+    margin-bottom: 55px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -35,6 +35,7 @@
 }
 .picture{
     width: 40vw;
+    margin-top: 50px;
 }
 .picture img{
     width: 550px;
@@ -44,7 +45,6 @@
     width: 40vw;
     display: flex;
     flex-direction: column;
-    height: 600px;
     justify-content: space-between;
     overflow: auto;
 }
@@ -84,23 +84,19 @@
     .picture-and-text {
         flex-direction: column;
         flex-wrap: nowrap;
-        height: 1100px;
+        justify-content: center;
     }
     .picture img {
         width: 80vw;
     }
     .about-container{
-        height: 1800px;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
     }
-    .picture-and-text-container{
-        height: 1200px;
-    }
     .text-right-of-picture {
         width: 80vw;
-        height: 900px;
+        margin-top: 50px;
     }
     .text {
         font-size: 1.3em;
@@ -116,49 +112,55 @@
         width: 200px;
     }
     .image-name-container {
-        width: 450px;
+        width: 550px;
     }
     .card-container-text {
         width: 65vw;
         font-size: 1.1em;
+        margin-top: 20px;
     }
     .name h2{
-        font-size: 1.7em;
+        font-size: 1.5em;
+        margin-bottom: 10px;
     }
     .name {
-        font-size: 1.2em;
+        font-size: 1.3em;
+        margin-left: 20px;
+        margin-top: 30px;
     }
     .text-right-of-picture h1{
         font-size: 2.2em;
     }
-
+    .picture{
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+    }
 }
 @media (min-device-width: 961px) and (max-device-width: 1500px) {
-    .text-right-of-picture {
-        height: 650px;
-    }
-    .picture-and-text-container {
-        height: 900px;
-    }
     .picture img {
         width: 450px;
     }
     .upper-text h1 {
         font-size: 2em;
     }
+
 }
 @media (min-width: 961px) and (max-width: 1500px) {
-    .text-right-of-picture {
-        height: 650px;
-    }
-    .picture-and-text-container {
-        height: 900px;
-    }
     .picture img {
-        width: 450px;
+        width: 650px;
     }
     .upper-text h1 {
         font-size: 2em;
+    }
+    .text-right-of-picture{
+        font-size: 1.4em;
+    }
+    .about-team{
+        font-size: 1.3em;
+    }
+    .name{
+        width: 350px;
     }
 }
 @media (min-device-width: 1200px) or (min-width: 1200px) {

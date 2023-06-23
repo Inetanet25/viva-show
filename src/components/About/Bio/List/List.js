@@ -1,5 +1,6 @@
 import './List.css';
 
+
 const List = ({name = 'Alice', text = 'Hello', profession = 'Stroitel', photo}) => {
     return (<div className='biography'>
         <div className='head-of-bio'>

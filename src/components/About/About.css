@@ -80,7 +80,7 @@
 .card-container-text {
     width: 35vw;
 }
-@media (max-width: 960px) {
+@media (max-device-width: 960px) or (max-width: 960px) {
     .picture-and-text {
         flex-direction: column;
         flex-wrap: nowrap;
@@ -133,6 +133,20 @@
     }
 
 }
+@media (min-device-width: 961px) and (max-device-width: 1500px) {
+    .text-right-of-picture {
+        height: 650px;
+    }
+    .picture-and-text-container {
+        height: 900px;
+    }
+    .picture img {
+        width: 450px;
+    }
+    .upper-text h1 {
+        font-size: 2em;
+    }
+}
 @media (min-width: 961px) and (max-width: 1500px) {
     .text-right-of-picture {
         height: 650px;
@@ -147,7 +161,7 @@
         font-size: 2em;
     }
 }
-@media (min-width: 1200px) {
+@media (min-device-width: 1200px) or (min-width: 1200px) {
     .picture img {
         width: 550px;
     }

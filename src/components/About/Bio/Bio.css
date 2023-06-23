@@ -15,7 +15,7 @@
     background-color: #fbfbfb;
 
 }
-@media (max-width: 960px){
+@media (max-device-width: 960px) or (max-width: 960px){
     .bio{
         flex-direction: column;
         align-items: center;

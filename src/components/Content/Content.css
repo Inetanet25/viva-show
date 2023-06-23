@@ -31,7 +31,7 @@
     flex-direction: row;
     width: 90vw;
     justify-content: space-evenly;
-    height: 662px;
+    /*height: 662px;*/
 }
 
 .example {
@@ -45,17 +45,22 @@
     width: 24vw;
     height: 184px;
 }
-@media (min-width: 1501px)  {
-    .content-wrapper {
-        height: 900px;
-    }
-}
-@media (min-width: 961px) and (max-width: 1500px) {
-    .content-wrapper {
-        height: 1000px;
-    }
-}
-@media (max-width: 960px) {
+/*@media (min-width: 1501px) or (min-device-width: 1501px)  {*/
+/*    .content-wrapper {*/
+/*        height: 900px;*/
+/*    }*/
+/*}*/
+/*@media (min-width: 961px) and (max-width: 1500px) {*/
+/*    .content-wrapper {*/
+/*        height: 1000px;*/
+/*    }*/
+/*}*/
+/*@media (min-device-width: 961px) and (max-device-width: 1500px) {*/
+/*    .content-wrapper {*/
+/*        height: 1000px;*/
+/*    }*/
+/*}*/
+@media (max-width: 960px) or (max-device-width: 960px){
     .example {
         width: 80vw;
     }
@@ -71,7 +76,7 @@
     }
     .examples {
         flex-wrap: wrap;
-        height: 2500px;
+        /*height: 2500px;*/
     }
     .services-text {
         font-size: 2.5em;

@@ -28,7 +28,7 @@
 .our-team-text h1{
     font-size: 2em;
 }
-@media (max-width: 960px) {
+@media (max-device-width: 960px) or (max-width: 960px) {
     .our-team {
         display: flex;
         flex-direction: column;

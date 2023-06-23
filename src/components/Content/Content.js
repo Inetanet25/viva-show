@@ -6,10 +6,8 @@ const Content = () => {
         <div className="content-wrapper">
             <div className='services-wrapper'>
                 <div className='services'>
-                    <div className='services-text'>Наши услуги</div>
-                    <div><p>Мы предлагаем самый широкий спектр услуг в области кинопродакшна. Ниже представлены лишь
-                        некоторые из
-                        них.</p></div>
+                    <div className='services-text'>Услуги</div>
+                    <div><p>Мы предлагаем широкий спектр услуг в области видеосъемки</p></div>
                 </div>
             </div>
             <div className='examples'>

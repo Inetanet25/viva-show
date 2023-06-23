@@ -9,7 +9,6 @@ const SecondLogo = () => {
                 Организация Мероприятий По Мотивам Любимых Фильмов
             </h1>
             <div className='buttons'>
-                <h2>Мы создаём истории</h2>
                 <Buttons/>
             </div>
         </div>)

@@ -79,6 +79,7 @@
 }
 .card-container-text {
     width: 35vw;
+    padding-top: 10px;
 }
 @media (max-device-width: 960px) or (max-width: 960px) {
     .picture-and-text {

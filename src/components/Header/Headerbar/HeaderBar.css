@@ -21,11 +21,13 @@
     justify-content: space-evenly;
     width: 60vw;
     align-items: center;
+
 }
 @media (max-device-width: 960px) or (max-width: 960px) {
     .header-bar{
         display: none;
     }
 }
+
 
 

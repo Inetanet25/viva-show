@@ -4,3 +4,8 @@
 div .logo {
     display: inline;
 }
+@media (max-width: 960px) or (max-device-width: 960px) {
+    .logo img{
+        width: 260px;
+    }
+}

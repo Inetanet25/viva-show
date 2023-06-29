@@ -17,10 +17,13 @@ function changeOfInput() {
 
 const checkBurger = document.getElementById('burger');
 useEffect(() => {
+
     const ClickOutside = (e) => {
-        if ( navbarRef.current && navbarRef.current.contains(e.target) === false && isMenuOpen == 'open' && checkBurger.checked == true) {
+        console.log(navbarRef.current.contains(e.target));
+        if ( navbarRef.current && navbarRef.current.contains(e.target) === false && isMenuOpen === 'open' && checkBurger.checked === true) {
             setIsMenuOpen( 'close');
             checkBurger.checked = false;
+
         }
     };
     document.addEventListener('click', ClickOutside, true);
@@ -30,8 +33,8 @@ useEffect(() => {
 }, [isMenuOpen])
 
 
-    return (<div className='burger-menu'  onClick={changeOfInput}>
-        <input id='burger' type="checkbox"/>
+    return (<div className='burger-menu'>
+        <input id='burger' type="checkbox" onClick={changeOfInput}/>
         <div className='hamburger-lines'>
             <span className='line line1'></span>
             <span className='line line2'></span>

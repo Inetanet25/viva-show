@@ -4,12 +4,11 @@ import constants from "../../constants/constants";
 
 const Bio = () => {
 
-    return (<div className='bio-wrapper'>
+    return (
         <div className='bio'>
-            {constants.map(e => {
+            {constants.about.map(e => {
                 return <List photo={e.photo} text={e.text} profession={e.profession} name={e.name} id={e.id}/>
             })}
-        </div>
-    </div>)
+        </div>)
 }
 export default Bio;

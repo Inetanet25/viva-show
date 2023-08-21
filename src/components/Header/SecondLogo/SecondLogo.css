@@ -1,34 +1,35 @@
 
 .second-logo img {
-    width: 35%;
+    width: 45%;
 }
 .second-logo {
     width: 80vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 360px;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 .text-under-second-logo {
-    font-size: 3em;
+    font-size: 2em;
     color: #f0f8ff;
-    width: 50%;
+    width: 80%;
 }
-.buttons {
-    justify-content: flex-end;
-    display: flex;
-    color: #f0f8ff;
-    width: 35%;
+.big-text {
+    font-size: 2em;
+    margin-bottom: 50px;
 }
 @media (max-device-width: 960px) or (max-width: 960px){
-    .text-under-second-logo{
-        width: 70vw;
+    .text-under-second-logo {
+        font-size: 4em;
+        width: 80vw;
+        margin-bottom: 40px;
     }
     .second-logo img {
-        width: 45%;
+        width: 75%;
     }
-    .buttons{
-        font-size: 1.3em;
-        width: 50%;
+
+    .second-logo {
+        width: 90vw;
     }
 }

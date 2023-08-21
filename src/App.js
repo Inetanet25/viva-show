@@ -8,6 +8,8 @@ import Videos from "./components/Videos/Videos";
 import Portfolio from "./components/Portfolio/Portfolio";
 import About from "./components/About/About";
 import Stock from "./components/Stock/Stock";
+import constants from "./components/constants/constants";
+import FullService from "./components/Content/Services/FullService/FullService";
 
 function App() {
   return (<BrowserRouter>
@@ -26,6 +28,9 @@ function App() {
                element={<Stock/>}/>
         <Route path='/about'
                element={<About/>}/>
+        {constants.services.map(e => {
+          return (<Route path={'/' + e.name} element={<FullService id={e.id} name={e.name} price={e.price} photo={e.photo} text={e.text} />} />)
+        })}
       </Routes>
       <Footer/>
     </div>

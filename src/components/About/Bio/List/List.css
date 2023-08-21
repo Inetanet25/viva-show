@@ -1,87 +1,67 @@
 .biography {
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 25vw;
     align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 10px;
-
+    margin-bottom: 30px;
 }
-.bio-photo {
+.biography p {
+    text-align: center;
     width: 22vw;
 }
-
-.bio-name {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 80px;
-    align-items: center;
-    font-size: 1.4em;
-    font-weight: bold;
-}
-.bio-text-wrapper {
+.bio-img {
     width: 22vw;
-    display: flex;
-    justify-content: center;
+    z-index: 2;
 }
-
-.bio-profession {
-    width: 18vw;
-    display: flex;
-    justify-content: center;
-    height: 100px;
+.bio-img:hover {
+    text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
 }
-.head-of-bio {
+.focus {
+    transition: filter 1s 0.3s;
+    filter: blur(3px);
+}
+.not-focus {
+    transition: filter 0.5s 0.2s;
+    filter: blur(0px);
+}
+.ava-and-text {
+    position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
+}
+.text {
+    position: absolute;
+    top: 10%;
+    width: 20vw;
+    left: 1vw;
+    font-size: 1.3em;
 
 }
-@media  (max-device-width: 960px) or (max-width: 960px) {
-    .biography{
-        width: 80%;
-        margin-bottom: 25px;
-    }
-    .bio-photo{
-        width: 80vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .head-of-bio{
-        width: 80vw;
-        display: flex;
-        align-items: center;
-    }
-    .bio-photo img{
-        width: 500px;
-    }
-    .bio-name {
-        width: 70vw;
-        font-size: 2em;
-    }
-    .bio-profession{
-        width: 70vw;
-        font-size: 1.5em;
-        text-align: center;
-        margin-bottom: 20px;
-        height: 70px;
-    }
-    .bio-text {
-        width: 70vw;
-    }
-    .bio-text-wrapper{
-        width: 70vw;
-        font-size: 1.2em;
-    }
+.hide-text {
+    transition: opacity 0.5s 0.2s, z-index 0s 0.7s;
+    opacity: 0;
+    z-index: 1;
 }
-@media (max-device-width: 1280px) or (min-device-width: 961px){
-    .bio-profession{
-        height: 150px;
-    }
-}@media (max-width: 1280px) or (min-width: 961px){
-    .bio-profession{
-        height: 150px;
-    }
+.show-text {
+    transition: opacity 1s 0.3s;
+    z-index: 3;
+    opacity: 1;
+}
+.exit-button {
+    position: absolute;
+    z-index: 1;
+    bottom: 10%;
+    left: 33%;
+    font-size: 1.5em;
+    background-color: white;
+}
+.hide-btn {
+    transition: opacity 0.5s 0.2s, z-index 0s 0.7s;
+    opacity: 0;
+
+}
+.show-btn {
+    transition: opacity 1s 0.3s;
+    z-index: 3;
+    opacity: 1;
 }

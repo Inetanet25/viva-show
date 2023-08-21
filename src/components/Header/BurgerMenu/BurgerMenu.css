@@ -1,5 +1,6 @@
 .burger-menu{
     display: none;
+
 }
 input[type="checkbox"] {
     position: fixed;
@@ -63,6 +64,7 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     flex-direction: column;
     width: 50vw;
     right: -50vw;
+    top: 0px;
     height: 100vh;
     padding-top: 100px;
     background: #fbfbfb;
@@ -76,6 +78,7 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     flex-direction: column;
     width: 50vw;
     right: -50vw;
+    top: 0px;
     height: 100vh;
     padding-top: 100px;
     background: #fbfbfb;

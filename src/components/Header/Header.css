@@ -1,34 +1,32 @@
 .header {
-    height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-size: cover;
-    justify-content: space-between;
-    flex-wrap: wrap;
 
 }
 .header-logo-navbar {
     display: flex;
     justify-content: space-between;
-    width: 80vw;
-}
-.header-wrapper{
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.9) url('https://viva-show.ru/wp-content/themes/photology/assets/img/man-camera-photography-photographer-lens-reflex-camera-60417-pxhere.com.jpg') no-repeat center center;
-    background-size: 120%;
+    width: 100vw;
+    background-color: #fbfbfb;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 2em;
 
 }
-@media (max-device-width: 1000px) or (max-width: 1000px){
-    .header-wrapper{
-        background-size: 270%;
-    }
+
+.header-wrapper{
+    height: 100vh;
+    background-image: url("./1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
-@media (max-device-height: 550px) or (max-height: 550px){
-    .header-wrapper {
-        height: 150vh;
-    }
-    .header {
-        height: 130vh;
-    }
-}
+

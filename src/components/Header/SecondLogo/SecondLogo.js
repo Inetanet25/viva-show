@@ -1,16 +1,19 @@
 import './SecondLogo.css';
 import Buttons from "./Buttons/Buttons";
+import logo from './logo.png';
 
 const SecondLogo = () => {
     return (
         <div className='second-logo'>
-            <img src='https://viva-show.ru/wp-content/uploads/2022/12/VIVA-SHOW.webp' alt='gg wp'/>
+            <img src={logo} alt='gg wp'/>
             <h1 className='text-under-second-logo'>
-                Организация Мероприятий По Мотивам Любимых Фильмов
+                <p className='big-text'>Видеопродакшн полного цикла</p>
+                <p className='low-text'>Мы ценим качество и гарантируем результат, которым вы останетесь довольны</p>
             </h1>
             <div className='buttons'>
-                <Buttons/>
+
             </div>
+            <Buttons/>
         </div>)
 }
 

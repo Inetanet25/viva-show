@@ -19,7 +19,6 @@ const checkBurger = document.getElementById('burger');
 useEffect(() => {
 
     const ClickOutside = (e) => {
-        console.log(navbarRef.current.contains(e.target));
         if ( navbarRef.current && navbarRef.current.contains(e.target) === false && isMenuOpen === 'open' && checkBurger.checked === true) {
             setIsMenuOpen( 'close');
             checkBurger.checked = false;
@@ -43,15 +42,12 @@ useEffect(() => {
 
         <div className={menuClass}  ref={navbarRef}>
             <NavLink to='/' className={(e) => e.isActive ? 'active' : 'disable'}>Главная страница</NavLink>
-            <NavLink to='/contacts' className={(e) => e.isActive ? 'active' : 'disable'}>Контакты</NavLink>
-
-            <NavLink to='/videos' className={(e) => e.isActive ? 'active' : 'disable'}>Видео</NavLink>
             <NavLink to='/portfolio'
                      className={(e) => e.isActive ? 'active' : 'disable'}>Портфолио</NavLink>
             <NavLink to='/stock'
                      className={(e) => e.isActive ? 'active' : 'disable'}>Акции</NavLink>
-            <NavLink to='/about'
-                     className={(e) => e.isActive ? 'active' : 'disable'}>О нас</NavLink>
+            <NavLink to='/contacts' className={(e) => e.isActive ? 'active' : 'disable'}>Контакты</NavLink>
+
         </div>
     </div>)
 }

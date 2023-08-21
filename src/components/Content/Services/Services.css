@@ -1,0 +1,11 @@
+.services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    background-color: black;
+}
+.service {
+    margin-left: 20px;
+}

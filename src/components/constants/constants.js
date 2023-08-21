@@ -1,16 +1,32 @@
-import photo1 from'./photo/1.jpeg';
-import photo2 from'./photo/2.jpeg';
-import photo3 from'./photo/3.jpeg';
-import photo4 from'./photo/4.jpg';
-import photo5 from'./photo/5.jpeg';
-import photo6 from'./photo/6.jpeg';
-import photo7 from'./photo/7.jpg';
-import photo8 from'./photo/8.jpeg';
-import photo9 from'./photo/9.jpg';
-import photo10 from'./photo/10.jpeg';
-import photo11 from'./photo/11.jpeg';
+import photo1 from './photo/photo-about/1.jpeg';
+import photo2 from './photo/photo-about/2.jpeg';
+import photo3 from './photo/photo-about/3.jpeg';
+import photo4 from './photo/photo-about/4.jpg';
+import photo5 from './photo/photo-about/5.jpeg';
+import photo6 from './photo/photo-about/6.jpeg';
+import photo7 from './photo/photo-about/7.jpg';
+import photo8 from './photo/photo-about/8.jpeg';
+import photo9 from './photo/photo-about/9.jpg';
+import photo10 from './photo/photo-about/10.jpeg';
+import photo11 from './photo/photo-about/11.jpeg';
 
-const constants = [
+import photo12 from './photo/photo-services/анимация_тест.png';
+import photo13 from './photo/photo-services/видеоинструкция_тест.png';
+import photo14 from './photo/photo-services/видеопрезентация.png';
+import photo15 from './photo/photo-services/док_фильм.png';
+import photo16 from './photo/photo-services/имиджевый.png';
+import photo17 from './photo/photo-services/интервью.png';
+import photo18 from './photo/photo-services/корпоративный_фильм.png';
+import photo19 from './photo/photo-services/проморолик.png';
+import photo20 from './photo/photo-services/реклама.png';
+import photo21 from './photo/photo-services/реклама_для_соцсетей.png';
+import photo22 from './photo/photo-services/юр_услуги.JPG';
+
+
+
+
+const constants = {
+        about:[
         {id:1, name: 'Елена Янкович', photo: photo1, text: 'Наставник по актерскому мастерству. Победитель международных кинофестивалей, а также Всероссийского конкурса ведущих. Писатель. Поэтесса. Мастерская Ю.В. Кара, Всероссийский государственный институт кинематографии им. С.А. Герасимова. Любит исторические романы о великих завоевателях и кофе.', profession: 'Режиссёр, сценарист, продюсер кино и телевидения'},
         {id:2, name: 'Андрей Осипов', photo: photo2, text: 'Художественные и документальные фильмы, видео-клипы, рекламные и промо ролики и многое другое... Мастерская Ю.В. Кара, Всероссийский государственный институт кинематографии им. С.А. Герасимова. Любит классическую музыку и хороший вокал.', profession: 'Режиссёр, сценарист, продюсер'},
         {id:3, name: 'Кирилл', photo: photo3, text: 'Рекламные видео, интервью, художественные, документальные и креативные фильмы. 8 лет жил в Турции, огромный опыт работы с моделями, блогерами и рекламой для международных компаний. Любит интересные сценарии и свою жену', profession: 'Оператор-постановщик, режиссёр монтажа, колорист, режиссёр'},
@@ -21,8 +37,22 @@ const constants = [
         {id:8, name: 'Татьяна', photo: photo8, text: 'Ведущая школа макияжа “Iconface”. Создание аутентичных образов для съёмок. Индивидуальные консультации по стилю. Любит искусство, литературу и историю моды.', profession: 'Make-up artist Moscow. Стилист. Визажист. Преподаватель по макияжу'},
         {id:9, name: 'Екатерина', photo: photo9, text: 'Любит розовый цвет и всё, что связано с Мэрилин Монро.', profession: 'Сценарист'},
         {id:10, name: 'Анна', photo: photo10, text: 'Образование: ВГИК ВККиТ им. С.А.Герасимова. Любит красоту в деталях.', profession: 'Сценарист'},
-        {id:11, name: 'Раиль', photo: photo11, text: 'Написание музыки: саундтреков к фильмам, музыки для песен, песен с вокалом. Сведение и мастеринг. Инструментов, голоса. Озвучивание. Любит историю и хорошую музыку.', profession: 'Композитор: инструменталист, вокалист. Звукорежиссер.'}
-    ]
+        {id:11, name: 'Раиль', photo: photo11, text: 'Написание музыки: саундтреков к фильмам, музыки для песен, песен с вокалом. Сведение и мастеринг. Инструментов, голоса. Озвучивание. Любит историю и хорошую музыку.', profession: 'Композитор: инструменталист, вокалист. Звукорежиссер.'}],
+        services:[
+                {id:1, price:'60 000', name: 'animation', photo:photo12, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'},
+                {id:2, price:'50 000', name: 'video-instruction', photo:photo13, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'},
+                {id:3, price:'40 000', name: 'video-presentation', photo:photo14, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'},
+                {id:4, price:'350 000', name: 'documentary-film', photo:photo15, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'},
+                {id:5, price:'130 000', name: 'image-video', photo:photo16, text:'Визитная карточка вашей компании. Качественный имиджевый ролик представляет собой незаменимый маркетинговый инструмент, повышающий узнаваемость бренда. Неповторимый подчерк вашей компании, уникальность, выраженная через визуальное искусство.'},
+                {id:6, price:'70 000', name: 'interview', photo:photo17, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'},
+                {id:7, price:'300 000', name: 'corporate-film', photo:photo18, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'},
+                {id:8, price:'110 000', name: 'promo-video', photo:photo19, text:'Короткий видеоролик, мотивирующий потенциального клиента приобрести ваши товары или услуги. Главная цель – привлечение внимания к продукту. Это удобный способ общения с потребителем, благодаря которому вы можете продемонстрировать ваши преимущества перед конкурентами и донести до зрителя главное – необходимость приобретения товара или услуги.'},
+                {id:9, price:'120 000', name: 'advertising', photo:photo20, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'},
+                {id:10, price:'50 000', name: 'advertising-for-social-networks', photo:photo21, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'},
+                {id:11, price:'', name: 'legal-service', photo:photo22, text:'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.'}
+
+        ]
+    }
 
 
 export default constants;

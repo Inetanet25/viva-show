@@ -4,16 +4,19 @@
     align-items: center;
 
 }
-.header-logo-navbar {
+.header-navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 100vw;
     background-color: #fbfbfb;
-    position: sticky;
+    /*position: sticky;*/
     top: 0;
     z-index: 1;
     height: 2em;
 
+}
+.header-navbar img {
+    width: 50px;
 }
 
 .header-wrapper{
@@ -30,3 +33,14 @@
 
 }
 
+@media (max-width: 900px) or (max-device-width: 900px){
+    .header-wrapper{
+        height: 130vh;
+    }
+    .header{
+        height: 130vh;
+    }
+    .header-navbar{
+        display: none;
+    }
+}

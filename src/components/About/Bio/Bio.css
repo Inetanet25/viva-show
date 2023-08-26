@@ -1,11 +1,4 @@
-.bio {
-    width: 80vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 30px;
-}
+
 @media (max-device-width: 960px) or (max-width: 960px){
     .bio{
         flex-direction: column;

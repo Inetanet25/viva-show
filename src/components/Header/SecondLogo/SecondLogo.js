@@ -1,5 +1,4 @@
 import './SecondLogo.css';
-import Buttons from "./Buttons/Buttons";
 import logo from './logo.png';
 
 const SecondLogo = () => {
@@ -10,10 +9,7 @@ const SecondLogo = () => {
                 <p className='big-text'>Видеопродакшн полного цикла</p>
                 <p className='low-text'>Мы ценим качество и гарантируем результат, которым вы останетесь довольны</p>
             </h1>
-            <div className='buttons'>
 
-            </div>
-            <Buttons/>
         </div>)
 }
 

@@ -1,67 +1,65 @@
 .biography {
     display: flex;
-    flex-direction: column;
-    width: 25vw;
-    align-items: center;
-    margin-bottom: 30px;
+    width: 75vw;
+    flex-wrap: nowrap;
+    margin-top: 50px;
 }
-.biography p {
-    text-align: center;
-    width: 22vw;
-}
-.bio-img {
-    width: 22vw;
-    z-index: 2;
-}
-.bio-img:hover {
-    text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
-}
-.focus {
-    transition: filter 1s 0.3s;
-    filter: blur(3px);
-}
-.not-focus {
-    transition: filter 0.5s 0.2s;
-    filter: blur(0px);
-}
-.ava-and-text {
+
+.other-bio {
     position: relative;
-    display: flex;
-    align-items: center;
 }
-.text {
-    position: absolute;
-    top: 10%;
+
+.position-left {
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.position-right {
+    flex-direction: row-reverse;
+
+}
+
+.bio-photo {
     width: 20vw;
-    left: 1vw;
-    font-size: 1.3em;
+}
+
+.other-left {
 
 }
-.hide-text {
-    transition: opacity 0.5s 0.2s, z-index 0s 0.7s;
-    opacity: 0;
-    z-index: 1;
-}
-.show-text {
-    transition: opacity 1s 0.3s;
-    z-index: 3;
-    opacity: 1;
-}
-.exit-button {
-    position: absolute;
-    z-index: 1;
-    bottom: 10%;
-    left: 33%;
-    font-size: 1.5em;
-    background-color: white;
-}
-.hide-btn {
-    transition: opacity 0.5s 0.2s, z-index 0s 0.7s;
-    opacity: 0;
 
+.other-right {
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
 }
-.show-btn {
-    transition: opacity 1s 0.3s;
-    z-index: 3;
+
+.element-animation-left, .element-animation-right {
+    opacity: 0;
+}
+
+.element-animation-left {
+    transform: translateX(-20vw);
+}
+
+.element-animation-right {
+    transform: translateX(20vw);
+}
+
+.element-show-left, .element-show-right {
     opacity: 1;
+    transition: all 1.5s;
+    transform: translateX(0);
+}
+
+@keyframes text-to-left {
+    from {
+        opacity: 0;
+        transform: translateX(-10vw);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

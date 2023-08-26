@@ -29,7 +29,7 @@ function App() {
         <Route path='/about'
                element={<About/>}/>
         {constants.services.map(e => {
-          return (<Route path={'/' + e.name} element={<FullService id={e.id} name={e.name} price={e.price} photo={e.photo} text={e.text} />} />)
+          return (<Route path={'/' + e.name} element={<FullService name={e.name} price={e.price} photo={e.photo} text={e.text} key={e.id + 'key'} title={e.title} />} key={e.id + '_route'}/>)
         })}
       </Routes>
       <Footer/>

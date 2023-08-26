@@ -1,6 +1,7 @@
 import './BurgerMenu.css';
 import {NavLink} from "react-router-dom";
 import {useRef, useEffect, useState} from "react";
+import logo from '../Logo/logo.png';
 
 const BurgerMenu = () => {
 
@@ -47,8 +48,10 @@ useEffect(() => {
             <NavLink to='/stock'
                      className={(e) => e.isActive ? 'active' : 'disable'}>Акции</NavLink>
             <NavLink to='/contacts' className={(e) => e.isActive ? 'active' : 'disable'}>Контакты</NavLink>
+            <img src={logo} />
 
         </div>
+
     </div>)
 }
 export default BurgerMenu;

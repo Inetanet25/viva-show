@@ -1,0 +1,118 @@
+.contacts-wrapper {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #262626;
+    color: #f5f5f5;
+    padding-bottom: 100px;
+}
+
+.contacts {
+    margin-top: 30px;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: #f5f5f5 3px solid;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.contact-detail img {
+    width: 15vw;
+    height: 15vw;
+    cursor: pointer;
+}
+.contact-detail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+}
+
+.additional-contacts {
+    margin-top: 30px;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.additional-contacts-detail ul {
+    list-style: none;
+}
+
+.additional-contacts-detail-list {
+    padding: 15px 0px 15px 30px;
+    background-color: #444444;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 80vw;
+    margin-top: 10px;
+}
+
+
+
+.plus-animation {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    bottom: 10px;
+    height: 30px;
+    width: 30px;
+    border: none;
+    outline: none;
+    background: #444444;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 20px;
+    top: 6px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+    color: #f5f5f5;
+}
+
+.horizontal-line {
+    position: absolute;
+    background: #f5f5f5;
+    display: block;
+    height: 1px;
+    width: 20px;
+    left: 6px;
+    transition: 0.5s ease-in-out;
+}
+
+.active-btn {
+    transform: rotate(-90deg);
+}
+
+@keyframes slide-in {
+
+    to {
+        max-height: 1000px;
+        margin-top: 30px;
+        opacity: 1;
+    }
+}
+
+.additional-text {
+    opacity: 0;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.text-active-btn {
+    animation: slide-in ease-in-out 1s forwards;
+}
